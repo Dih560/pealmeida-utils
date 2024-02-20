@@ -1,6 +1,6 @@
 {
     "name": "pealmeida-utils",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Pacote de utilidades para projetos em javascript",
     "main": "src/index.js",
     "scripts": {

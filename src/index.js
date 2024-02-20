@@ -302,6 +302,16 @@ export const OnlyNumber = value => {
   return oldValue.replace(/[^\d]+/g, '');
 }
 
+export const AddDateSeconds = (date, quantity = 1) => {
+  var newDate = new Date(date);
+  return newDate.setSeconds(newDate.setSeconds() + quantity);
+}
+
+export const AddDateMinutes = (date, quantity = 1) => {
+  var newDate = new Date(date);
+  return newDate.setMinutes(newDate.getMinutes() + quantity);
+}
+
 export const AddDateDays = (date, quantity = 1) => {
   var newDate = new Date(date);
   return newDate.setDate(newDate.getDate() + quantity);
@@ -315,6 +325,16 @@ export const AddDateMonths = (date, quantity = 1) => {
 export const AddDateYears = (date, quantity = 1) => {
   var newDate = new Date(date);
   return newDate.setFullYear(newDate.getFullYear() + quantity);
+}
+
+export const RemoveDateSeconds = (date, quantity = 1) => {
+  var newDate = new Date(date);
+  return newDate.setSeconds(newDate.getSeconds() - quantity);
+}
+
+export const RemoveDateMinutes = (date, quantity = 1) => {
+  var newDate = new Date(date);
+  return newDate.setMinutes(newDate.getMinutes() - quantity);
 }
 
 export const RemoveDateDays = (date, quantity = 1) => {
